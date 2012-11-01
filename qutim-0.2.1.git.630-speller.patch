@@ -1,0 +1,20 @@
+diff -urN qutim-0.2.1.git.630/plugins/kde-integration/speller/src/kdespellerlayer.cpp qutim-0.2.1.git.630-patched/plugins/kde-integration/speller/src/kdespellerlayer.cpp
+--- qutim-0.2.1.git.630/plugins/kde-integration/speller/src/kdespellerlayer.cpp	2010-05-26 00:01:49.000000000 +1100
++++ qutim-0.2.1.git.630-patched/plugins/kde-integration/speller/src/kdespellerlayer.cpp	2012-10-26 02:33:48.530133793 +1100
+@@ -126,13 +126,14 @@
+ 
+ void KdeSpellerLayer::startSpellCheck( QTextEdit *document )
+ {
+-	if( Highlighter *highlighter = m_highlighters.value( document ) )
++	Highlighter *highlighter = m_highlighters.value( document );
++	if( highlighter )
+ 	{
+ 		highlighter->setActive( true );
+ 	}
+ 	else
+ 	{
+-		Highlighter *highlighter = new Highlighter( document );
++		highlighter = new Highlighter( document );
+ 		highlighter->setAutomatic( m_autodetect );
+ 		highlighter->setCurrentLanguage( m_dictionary );
+ 		m_highlighters.insert( document, QPointer<Highlighter>(highlighter) );

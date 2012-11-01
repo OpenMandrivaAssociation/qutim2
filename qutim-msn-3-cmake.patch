@@ -1,0 +1,18 @@
+--- plugins/msn/CMakeLists.txt	2011-09-15 17:23:12.726873492 +0400
++++ plugins/msn/CMakeLists.txt	2011-09-15 17:23:22.463022653 +0400
+@@ -69,9 +69,9 @@
+  target_link_libraries(msn ${QT_LIBRARIES} ${OPENSSL_EAY_LIBRARIES})
+ endif(NOT WIN32)
+ 
+-SET_TARGET_PROPERTIES(msn
+-PROPERTIES
+-PREFIX "../../"
+-) 
++#SET_TARGET_PROPERTIES(msn
++#PROPERTIES
++#PREFIX "../../"
++#) 
+ 
+-INSTALL (TARGETS msn DESTINATION lib/qutim )
+\ No newline at end of file
++INSTALL (TARGETS msn DESTINATION lib/qutim )

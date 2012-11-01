@@ -1,0 +1,19 @@
+diff -urN qutim-0.2.1.git.630/CMakeLists.txt qutim-0.2.1.git.630-patched/CMakeLists.txt
+--- qutim-0.2.1.git.630/CMakeLists.txt	2011-09-15 00:57:33.000000000 +1100
++++ qutim-0.2.1.git.630-patched/CMakeLists.txt	2012-10-26 01:40:26.350947288 +1100
+@@ -67,6 +67,7 @@
+ 
+ SET (QUTIM_PLUGINS_DEST "lib/qutim/")
+ FIND_PACKAGE (Qt4 REQUIRED)
++FIND_PACKAGE (X11 REQUIRED)
+ 
+ INCLUDE (UseQt4)
+ INCLUDE (MacroEnsureVersion)
+@@ -445,6 +446,7 @@
+ 	${QT_LIBRARIES}
+ 	${QT_QTMAIN_LIBRARY}
+ 	${QUTIM_LIBS}
++	${X11_X11_LIB}
+ 	)
+ 
+ SET (module_install_dir "${CMAKE_ROOT}/Modules")

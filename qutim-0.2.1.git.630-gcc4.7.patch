@@ -1,0 +1,11 @@
+diff -urN qutim-0.2.1.git.630/src/3rdparty/qtsolutions/qtlocalpeer.cpp qutim-0.2.1.git.630-patched/src/3rdparty/qtsolutions/qtlocalpeer.cpp
+--- qutim-0.2.1.git.630/src/3rdparty/qtsolutions/qtlocalpeer.cpp	2011-09-15 00:57:33.000000000 +1100
++++ qutim-0.2.1.git.630-patched/src/3rdparty/qtsolutions/qtlocalpeer.cpp	2012-10-26 01:23:36.000000000 +1100
+@@ -57,6 +57,7 @@
+ #endif
+ #if defined(Q_OS_UNIX)
+ #include <time.h>
++#include <unistd.h>
+ #endif
+ 
+ namespace QtLP_Private {
