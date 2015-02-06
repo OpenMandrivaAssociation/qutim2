@@ -26,7 +26,7 @@
 Summary:	qutIM - multiplatform multiprotocol (ICQ, Jabber etc) instant messenger
 Name:		qutim2
 Version:	%{coreversion}
-Release:	1
+Release:	2
 Group:		Networking/Instant messaging
 License:	GPLv2+
 Url:		http://qutim.org/
