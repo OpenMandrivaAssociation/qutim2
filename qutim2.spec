@@ -29,7 +29,7 @@ Version:	%{coreversion}
 Release:	2
 Group:		Networking/Instant messaging
 License:	GPLv2+
-Url:		http://qutim.org/
+Url:		https://qutim.org/
 Source0:	%{oname}-%{coreversion}.tar.bz2
 Source1:	qutim-emoticons-0.2.0.tar.bz2
 Source2:	qutim-langs-0.2.0.tar.bz2
